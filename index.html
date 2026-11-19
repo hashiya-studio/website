@@ -5,47 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hashiya Studio</title>
 <meta name="description" content="Hashiya Studio is a small independent studio in Philadelphia. We make Faal, a daily couplet of Hafez for iPhone.">
+<link rel="canonical" href="https://hashiya.studio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hashiya Studio">
+<meta property="og:description" content="A small independent studio in Philadelphia making quiet apps around poetry and old traditions.">
+<meta property="og:url" content="https://hashiya.studio/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&family=Noto+Nastaliq+Urdu:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
 <style>
-  :root {
-    --paper: #f6f2ea;
-    --ink: #1b1a17;
-    --muted: #6b665c;
-    --rule: #d9d2c4;
-    --accent: #8a2f1f;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --paper: #141311;
-      --ink: #ece6da;
-      --muted: #a39d91;
-      --rule: #34312b;
-      --accent: #d98a6c;
-    }
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font: 400 17px/1.6 Inter, system-ui, -apple-system, sans-serif;
-  }
-  a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 3px; }
-  a:hover { text-decoration-color: var(--accent); }
-  .page {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 56px 20px 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
   header { padding-bottom: 48px; border-bottom: 1px solid var(--rule); }
   .mark {
-    font-family: "Cormorant Garamond", Georgia, serif;
+    font-family: var(--serif);
     font-weight: 600;
     font-size: clamp(44px, 9vw, 72px);
     line-height: 1;
@@ -58,47 +30,18 @@
     color: var(--muted);
     max-width: 34em;
   }
-  .gloss .fa { font-family: "Noto Nastaliq Urdu", serif; font-size: 1.05em; color: var(--ink); }
+  .gloss .fa { font-family: var(--nastaliq); font-size: 1.05em; color: var(--ink); }
   section { padding: 48px 0; border-bottom: 1px solid var(--rule); }
-  .label {
-    font-size: 12px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin: 0 0 18px;
-  }
   h2 {
-    font-family: "Cormorant Garamond", Georgia, serif;
+    font-family: var(--serif);
     font-weight: 600;
     font-size: 40px;
     line-height: 1.1;
     margin: 0 0 6px;
   }
-  .soon { color: var(--accent); font-size: 15px; margin: 0 0 24px; }
-  .couplet {
-    direction: rtl;
-    font-family: "Noto Nastaliq Urdu", serif;
-    font-size: clamp(17px, 4.4vw, 26px);
-    line-height: 2.4;
-    margin: 28px 0;
-    padding: 8px 0 8px 0;
-  }
-  .couplet p { margin: 0; }
-  .couplet p { white-space: nowrap; }
-  .couplet p:nth-child(2) { padding-right: 10%; }
-  @media (min-width: 560px) { .couplet p:nth-child(2) { padding-right: 18%; } }
-  .couplet-ref { color: var(--muted); font-size: 14px; margin-top: -12px; }
-  ul.facts { list-style: none; padding: 0; margin: 24px 0 0; }
-  ul.facts li { padding: 10px 0; border-top: 1px solid var(--rule); }
-  ul.facts li:last-child { border-bottom: 1px solid var(--rule); }
-  footer {
-    padding-top: 28px;
-    color: var(--muted);
-    font-size: 14px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 18px;
-  }
+  .project { max-width: 36em; }
+  .project p { margin: 0 0 18px; }
+  .more { font-size: 15px; }
 </style>
 </head>
 <body>
@@ -116,21 +59,14 @@
     <p class="label">Our app</p>
     <h2 id="faal-title">Faal</h2>
     <p class="soon">Coming soon to iPhone</p>
-    <p>
-      Once a day, a parrot picks one card from twelve face-down cards, and the card holds a single couplet of Hafez.
-      Read it in Persian with an English, Urdu or Hindi rendering, and take a moment with it.
-      Faal is for reflection, not prediction.
-    </p>
-    <div class="couplet" lang="fa">
-      <p>الا یا ایها الساقی ادر کأسا و ناولها</p>
-      <p>که عشق آسان نمود اول ولی افتاد مشکل‌ها</p>
+    <div class="project">
+      <p>
+        Once a day, a parrot picks one card from twelve face-down cards, and the card holds a single
+        couplet of Hafez. Read it in Persian with an English, Urdu or Hindi rendering, and take a
+        moment with it. Faal is for reflection, not prediction.
+      </p>
+      <p class="more"><a href="faal/">More about Faal →</a></p>
     </div>
-    <p class="couplet-ref">Hafez, Ghazal 1 · Couplet 1</p>
-    <ul class="facts">
-      <li>One faal a day, the same for everyone who opens the app.</li>
-      <li>English, Urdu and Hindi, with an optional Roman transliteration.</li>
-      <li>No account, no ads, no tracking. Everything stays on your phone. <a href="faal/privacy/">Privacy policy</a></li>
-    </ul>
   </section>
 
   <section id="support" aria-labelledby="support-title">
@@ -147,7 +83,7 @@
     </p>
   </section>
 
-  <footer>
+  <footer class="site-footer">
     <span>© 2026 Hashiya Studio LLC · Philadelphia, Pennsylvania</span>
     <a href="faal/privacy/">Faal privacy policy</a>
     <a href="mailto:hello@hashiya.studio">hello@hashiya.studio</a>
