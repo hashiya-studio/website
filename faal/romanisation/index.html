@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Faal writes Persian in Roman letters · Hashiya Studio</title>
+<meta name="description" content="How Faal writes Persian in Roman letters: a pronunciation guide for readers of the Persianate tradition in Pakistan and India, not a scholarly transliteration.">
+<link rel="canonical" href="https://hashiya.studio/faal/romanisation/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&family=Noto+Nastaliq+Urdu:wght@400&family=Noto+Serif+Devanagari:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(32px, 7vw, 46px);
+    line-height: 1.1;
+    margin: 28px 0 8px;
+  }
+  .dates { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 26px;
+    margin: 36px 0 8px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+  }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  em { font-style: italic; }
+  table.scripts {
+    border-collapse: collapse;
+    margin: 24px 0 8px;
+    font-size: 16px;
+  }
+  table.scripts th {
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 0 28px 10px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  table.scripts td {
+    padding: 12px 28px 12px 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: middle;
+  }
+  table.scripts td.urdu {
+    font-family: var(--nastaliq);
+    direction: rtl;
+    text-align: right;
+    font-size: 20px;
+    line-height: 2.2;
+  }
+  table.scripts td.deva { font-family: "Noto Serif Devanagari", serif; font-size: 18px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+  footer a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<!--
+  Page text is the public romanisation note, kept word for word. The source
+  is the project doc claude/faal-romanisation-public.md; the full internal
+  policy with the working word list is in the Faal repo at
+  content/romanisation.md.
+
+  The app's About screen links straight here ("How we write the Roman
+  letters", ROMANISATION_URL in the Faal repo's src/config.ts), so this URL
+  must not change.
+
+  Note on the marks: the half-ring in taʾthīr is deliberate — it belongs to
+  the academic spelling being contrasted. Faal's own examples use a plain
+  apostrophe, as in ta'sīr.
+-->
+<main class="page page--prose">
+  <a class="back" href="../">← Faal</a>
+
+  <h1>How Faal writes Persian in Roman letters</h1>
+  <p>The Roman line under each couplet in Faal is a pronunciation guide for readers of the Persianate tradition in Pakistan and India, not a scholarly transliteration. It records how such a reader says a line of Hafez, so that someone who cannot read the Persian script can say the couplet aloud. The Persian text is always on the same screen.</p>
+  <h2>The reader</h2>
+  <p>We write for a reader in Pakistan or India with an interest in Persian literary culture, who reads Urdu or Hindi comfortably and Persian script slowly or not at all. Such a reader already knows <em>dil</em>, <em>gul</em>, <em>sāqī</em>, <em>jām</em> and <em>hijr</em>, says <em>vafā</em> rather than <em>wafā</em>, and reads شعر as <em>sher</em>.</p>
+  <h2>Where we agree with the academic standard (IJMES)</h2>
+  <ul>
+    <li>Long vowels carry macrons: ā, ī, ū.</li>
+    <li>Short vowels are i and u, not the modern Iranian e and o: <em>dil</em>, <em>gul</em>, <em>lutf</em>, not <em>del</em>, <em>gol</em>, <em>loft</em>.</li>
+    <li>The contracted conjunction is <em>wa-</em>.</li>
+    <li>Classical vocabulary and forms are kept, and one system is used throughout.</li>
+  </ul>
+  <h2>Where we depart from it, and why</h2>
+  <p><strong>The vowels ē and ō.</strong> We write <em>dōsh</em>, <em>nēst</em>, <em>gētī</em>, <em>khurshēd</em>, where IJMES writes <em>dūsh</em>, <em>nīst</em>, <em>gītī</em>, <em>khurshīd</em>. Classical Persian distinguished these "majhūl" vowels from ī and ū. Modern Iranian Persian lost the distinction; the Persianate traditions of India, Pakistan and Afghanistan kept it. Writing ē and ō is closer both to Hafez's own pronunciation and to how our readers recite him.</p>
+  <p><strong>و as v.</strong> We write <em>vafā</em>, <em>muravvat</em>, <em>vaqt</em>. Some scholarly works covering the whole Persianate world use w; for readers in Pakistan and India, و is not lip-rounded in these words, and v is the closer guide. Exceptions: <em>khw-</em> stays (<em>khwāb</em>, <em>khwēsh</em>), Arabic phrases keep w, and a final و is a vowel (<em>khusrau</em>, <em>rehrau</em>).</p>
+  <p><strong>The ezafe as -e.</strong> We write <em>lutf-e azal</em>, <em>shab-e qadr</em>, and after a vowel <em>-ye</em>: <em>parda-ye ghaib</em>. Urdu says <em>-e</em>; <em>-i</em> would be read wrongly.</p>
+  <p><strong>Colouring before h.</strong> We write <em>shehr</em>, <em>gireh</em>, <em>sohbat</em>, <em>rehmat</em>, <em>zehmat</em>, where IJMES writes <em>shahr</em>, <em>girih</em>, <em>ṣuḥbat</em>, <em>raḥmat</em>, <em>zaḥmat</em>. This is how an Urdu speaker says a vowel before a closing h. Colouring changes the vowel but never adds one, so شهد is <em>shehd</em>, and the line still matches the Persian syllable for syllable. It applies word by word, not as a blanket rule: صحبت is <em>sohbat</em> but صحرا stays <em>sahrā</em>, and سحر is <em>sahar</em> for dawn and <em>sehr</em> for magic. Names keep their familiar forms (<em>ahriman</em>, <em>Khusrau</em>, <em>Qārūn</em>).</p>
+  <p><strong>Arabic consonants are not marked.</strong> We write <em>hadīs</em>, <em>ta'sīr</em>, <em>sabr</em>, <em>zulmat</em> rather than <em>ḥadīṯ</em>, <em>taʾthīr</em>, <em>ṣabr</em>, <em>ẓulmat</em>. Urdu does not distinguish these sounds in speech, and dots would ask the reader to make a distinction they do not make. The information is not lost: the Persian script is always alongside.</p>
+  <p><strong>Prefixes as they are said:</strong> <em>ba-</em> rather than <em>bi-</em>, <em>mē-</em> rather than <em>mī-</em>.</p>
+  <h2>Three scripts, three systems</h2>
+  <p>Each couplet appears in Persian, in Roman letters, in Urdu and in Devanagari. These are not four copies of one spelling. The Roman shows pronunciation; Devanagari follows ordinary Hindi spelling, which shows the colouring in मेहर and सोहबत but not in शहर or रहम. Both are correct as they stand.</p>
+  <table class="scripts">
+    <thead><tr>
+      <th>Urdu</th>
+      <th>Roman</th>
+      <th>Devanagari</th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td class="urdu" lang="ur">شہر</td>
+        <td class="roman">shehr</td>
+        <td class="deva" lang="hi">शहर</td>
+      </tr>
+      <tr>
+        <td class="urdu" lang="ur">زحمت</td>
+        <td class="roman">zehmat</td>
+        <td class="deva" lang="hi">ज़हमत</td>
+      </tr>
+      <tr>
+        <td class="urdu" lang="ur">گرہ</td>
+        <td class="roman">gireh</td>
+        <td class="deva" lang="hi">गिरह</td>
+      </tr>
+      <tr>
+        <td class="urdu" lang="ur">مہر</td>
+        <td class="roman">mehr</td>
+        <td class="deva" lang="hi">मेहर</td>
+      </tr>
+      <tr>
+        <td class="urdu" lang="ur">صحبت</td>
+        <td class="roman">sohbat</td>
+        <td class="deva" lang="hi">सोहबत</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>The text</h2>
+  <p>The Persian follows the Qazvini–Ghani edition, as carried by the Ganjoor open library. Where a vowel mark in the source and the reading disagree, we check the edition rather than adjust the Roman quietly.</p>
+  <p>A scholarly transliteration may follow one day, as a separate line for readers who want it, never replacing this one.</p>
+
+  <footer>
+    <a href="../">Faal</a>
+    <a href="../privacy/">Privacy policy</a>
+    <a href="../terms/">Terms</a>
+  </footer>
+</main>
+</body>
+</html>
