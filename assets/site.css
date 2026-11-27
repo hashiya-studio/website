@@ -75,6 +75,8 @@ a:hover { text-decoration-color: var(--accent); }
   margin: 0 0 24px;
 }
 
+.more { font-size: 15px; }
+
 .site-footer {
   padding-top: 28px;
   color: var(--muted);
