@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Faal · Hashiya Studio</title>
-<meta name="description" content="Faal: a daily couplet of Hafez for iPhone, from Hashiya Studio. Coming soon.">
+<meta name="description" content="Faal: once a day, a parrot picks one couplet of Hafez from twelve face-down cards. For iPhone, from Hashiya Studio. Reflection, not prediction.">
 <link rel="canonical" href="https://hashiya.studio/faal/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Faal · Hashiya Studio">
-<meta property="og:description" content="A daily couplet of Hafez for iPhone. Coming soon.">
+<meta property="og:description" content="Once a day, a parrot picks one couplet of Hafez from twelve face-down cards. For iPhone.">
 <meta property="og:url" content="https://hashiya.studio/faal/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +28,15 @@
     margin: 0;
     max-width: 34em;
   }
+  section { padding: 40px 0; border-bottom: 1px solid var(--rule); }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.15;
+    margin: 0 0 10px;
+  }
+  .languages { color: var(--muted); font-size: 15px; margin: 16px 0 0; }
 </style>
 </head>
 <body>
@@ -38,9 +47,47 @@
     <h1>Faal</h1>
     <p class="soon">Coming soon to iPhone</p>
     <p class="standfirst">
-      A daily couplet of Hafez, for reflection, not prediction. More here at launch.
+      Once a day, a parrot picks one card from twelve face-down cards, and the card holds a single
+      couplet of Hafez. Read it in Persian with an English, Urdu or Hindi rendering, and take a
+      moment with it. Faal is for reflection, not prediction.
     </p>
   </header>
+
+  <section aria-labelledby="ritual-title">
+    <p class="label">The ritual</p>
+    <h2 id="ritual-title">One faal a day</h2>
+    <p>
+      Hold a question in mind, and the parrot draws for you. Twelve cards are dealt face down and
+      only one is turned over, so the couplet you get is the couplet you sit with until tomorrow.
+      Everyone who opens the app that day receives their own draw from the same curated pool.
+    </p>
+    <div class="couplet" lang="fa">
+      <p>الا یا ایها الساقی ادر کأسا و ناولها</p>
+      <p>که عشق آسان نمود اول ولی افتاد مشکل‌ها</p>
+    </div>
+    <p class="couplet-ref">Hafez, Ghazal 1 · Couplet 1</p>
+  </section>
+
+  <section aria-labelledby="reading-title">
+    <p class="label">Reading it</p>
+    <h2 id="reading-title">In your own language</h2>
+    <p>
+      The Persian is always there, and beside it an English, Urdu or Hindi rendering — the Hindi
+      adapted rather than transliterated. An optional Roman transliteration follows South Asian
+      pronunciation, and turning the phone sideways shows the couplet large.
+    </p>
+    <p class="languages"><bdi>English</bdi> · <bdi>اردو</bdi> · <bdi>हिन्दी</bdi> · <bdi>فارسی</bdi></p>
+  </section>
+
+  <section aria-labelledby="privacy-title">
+    <p class="label">What it doesn't do</p>
+    <h2 id="privacy-title">Nothing leaves your phone</h2>
+    <ul class="facts">
+      <li>No account, no sign-in, no ads, no tracking.</li>
+      <li>Your question is yours; it is never stored or sent anywhere.</li>
+      <li>Settings and the day's faal stay on your iPhone. <a href="privacy/">Privacy policy</a> · <a href="terms/">Terms</a></li>
+    </ul>
+  </section>
 
   <footer class="site-footer">
     <span>© 2026 Hashiya Studio LLC · Philadelphia, Pennsylvania</span>
